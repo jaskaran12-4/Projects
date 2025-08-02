@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Navigation and Traffic Light</title>
+    <style>
+        nav {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: inline;
+            line-height: 1;
+            padding: 0;
+        }
+        nav a:hover {
+            background-color: red;
+            color: white;
+        }
+        .traffic-light {
+            border: solid 3px black;
+            background-color: black;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            width: 50px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .light {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+        }
+        .light.red {
+            background-color: rgb(155, 26, 26);
+        }
+        .light.yellow {
+            background-color: rgb(159, 159, 19);
+        }
+        .light.green {
+            background-color: rgb(8, 137, 8);
+        }
+        .light.green:hover {
+            background-color: rgb(10, 240, 10);
+        }
+        .light.red:hover {
+            background-color: rgb(253, 30, 30);
+        }
+        .light.yellow:hover {
+            background-color: rgb(220, 220, 20);
+        }
+        .pool {
+            border: solid;
+            width: 10px;
+            height: 200px;
+            background-color: black;
+            margin-top: 0;
+        }
+        .pool1 {
+            border: solid;
+            width: 40px;
+            height: 10px;
+            background-color: black;
+            margin-top: 0;
+        }
+        .pool2 {
+            border: solid;
+            width: 60px;
+            height: 10px;
+            background-color: black;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">More</a>
+    </nav>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+    <div class="pool"></div>
+    <div class="pool1"></div>
+    <div class="pool2"></div>
+</body>
+</html>
